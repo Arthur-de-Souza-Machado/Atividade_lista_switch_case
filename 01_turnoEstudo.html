@@ -12,11 +12,24 @@
     */
 
     //ENTRADA
-    
-    
+    const turno = prompt(`Informe o turno que trabalha (M-matutino ou V-Vespertino ou N- Noturno):`).trim().toUpperCase();
     //PROCESSAMENTO
+    let mensagem = ``
+    switch (turno) {
+        case "M":
+            document.write("Bom Dia!");
+            break;
+        case "V":
+            document.write("Boa Tarde!");
+            break;
+        case "N":
+            document.write("Boa Noite!");
+            break;
+        default:
+            document.write("Valor Inválido!");
+            break;
+    }
 
-    
     //SAÍDA
 
 </script>

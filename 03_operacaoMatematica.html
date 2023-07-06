@@ -8,11 +8,35 @@
     */
 
     //ENTRADA
-
-
+    const num1 = Number(prompt(`Informe um numero:`).trim().replace(",", "."));
+    const num2 = Number(prompt(`Informe um outro numero:`).trim().replace(",", "."));
+    const operacao = prompt(`Informe o operador que deseja usar: (A-adição S-subtração D-divisão M-multiplacação )`).toUpperCase().trim();
     //PROCESSAMENTO
+    let resultado = 0;
+    switch(operacao){
+        case "A":
+        resultado = num1 + num2
+        break;
+        case "S":
+        resultado = num1 - num2
+        break;
+        case "D":
+        resultado = num1 / num2
+        break;
+        case "M":
+        resultado = num1 * num2
+        break;
+        default:
+            mensagm = `Caracter invalido`
+            break;
+    }
+    let mensagm = `O numero ${resultado} é`;
 
-    
+    switch(Number.isInteger(resultado)){
+        case true: mensagm += `inteiro`
+        break;
+        case false: mensagm += `decimal`
+    }
     //SAÍDA
 
 </script>

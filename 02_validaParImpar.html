@@ -5,11 +5,20 @@
     */
 
     //ENTRADA
-
-    
+    const inteiro = Number(prompt(`Informe um numero inteiro:`))
     //PROCESSAMENTO
+    switch (inteiro % 2) {
+        case 0:
+            document.write(`O numero ${inteiro} é par`);
+            break;
+        case 1:
+            document.write(`O numero ${inteiro} é impar`);
+            break;
+        default:
+            document.write(`Caracter invalido!`);
+            break;
+    }
 
-    
     //SAÍDA
 
 </script>
